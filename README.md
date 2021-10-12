@@ -49,7 +49,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=[port number] bash ./tools/dist_train_maet.sh 
 python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] --load-from [COCO model path]
 ```
 
-### EXDark Results
+### Newly MAET-YOLO results on EXDark dataset (0.776 more than our paper's results):
 | class     | gts  | dets | recall | ap    |
 |  ----  | ----  | ----  | ----  | ----  |
 | Bicycle   | 212  | 761  | 0.920  | 0.834 |
