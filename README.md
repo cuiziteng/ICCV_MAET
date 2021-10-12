@@ -1,9 +1,10 @@
 # (ICCV 2021) Multitask AET with Orthogonal Tangent Regularity for Dark Object Detection [(paper)](https://openaccess.thecvf.com/content/ICCV2021/papers/Cui_Multitask_AET_With_Orthogonal_Tangent_Regularity_for_Dark_Object_Detection_ICCV_2021_paper.pdf) [(supp)](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Cui_Multitask_AET_With_ICCV_2021_supplemental.pdf)
 
-**When Human Vision Meets Machine Vision**
-![avatar](pics/example.jpg)
+**When Human Vision Meets Machine Vision:**<br/>
 
-**Physics-based low-light degrading transformation**
+<img src="pics/example.jpg" width="500" height="313" align="left" />
+
+**Physics-based low-light degrading transformation:**<br/>
 ![avatar](pics/pipeline.jpg)
 
 ## Citation
