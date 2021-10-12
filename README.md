@@ -3,7 +3,7 @@
 **When Human Vision Meets Machine Vision:**
 
 <center class="half">
-<img src="pics/example.jpg" width="313" height="313"><img src="pics/pipeline.jpg" width="500" height="313">
+<img src="pics/example.jpg" height="313"><img src="pics/pipeline.jpg" height="313">
 </center>
 
 **Physics-based low-light degrading transformation (unprocess -- degradation -- ISP):**
