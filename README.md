@@ -49,6 +49,23 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=[port number] bash ./tools/dist_train_maet.sh 
 python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] --load-from [COCO model path]
 ```
 
+### EXDark Results
+| class     | gts  | dets | recall | ap    |
+|  ----  | ----  | ----  | ----  | ----  |
+| Bicycle   | 212  | 761  | 0.920  | 0.834 |
+| Boat      | 289  | 984  | 0.896  | 0.785 |
+| Bottle    | 282  | 1195 | 0.879  | 0.758 |
+| Bus       | 135  | 319  | 0.970  | 0.928 |
+| Car       | 597  | 1685 | 0.918  | 0.835 |
+| Cat       | 183  | 543  | 0.885  | 0.738 |
+| Chair     | 466  | 2057 | 0.839  | 0.706 |
+| Cup       | 366  | 1116 | 0.885  | 0.792 |
+| Dog       | 207  | 605  | 0.918  | 0.803 |
+| Motorbike | 233  | 866  | 0.871  | 0.764 |
+| People    | 1562 | 4136 | 0.896  | 0.801 |
+| Table     | 333  | 1920 | 0.796  | 0.563 |
+| mAP       |      |      |        | **0.776** |
+
 ## Citation
 ```
 @InProceedings{Cui_2021_ICCV,
