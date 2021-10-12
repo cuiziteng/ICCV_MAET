@@ -30,10 +30,14 @@ python tools/test.py configs/MAET_yolo/maet_yolo_exdark.py  [EXDark model path] 
 ```
 
 ## Training
-**Setp-1:** Pre-train MAET-COCO model (273 epochs on 4 GPUs):
-
-**Setp-2:** Fine-tune on EXDark datastet (25epoch on 1GPU): 
-python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id]
+**Setp-1:** Pre-train MAET-COCO model (273 epochs on 4 GPUs): (if use other GPU number, please reset learining rate)
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=[port number] bash ./tools/dist_train_maet.sh configs/MAET_yolo/maet_yolo_coco_ort.py 4
+```
+**Setp-2:** Fine-tune on EXDark datastet (25epoch on 1 GPU): 
+```
+python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] --load-from [COCO model path]
+```
 
 ## Citation
 ```
