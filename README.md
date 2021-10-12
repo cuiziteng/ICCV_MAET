@@ -3,8 +3,7 @@
 
 
 ## Citation
-
-'''
+```
 @InProceedings{Cui_2021_ICCV,
     author    = {Cui, Ziteng and Qi, Guo-Jun and Gu, Lin and You, Shaodi and Zhang, Zenghui and Harada, Tatsuya},
     title     = {Multitask AET With Orthogonal Tangent Regularity for Dark Object Detection},
@@ -13,7 +12,7 @@
     year      = {2021},
     pages     = {2553-2562}
 }
-'''
+```
 
 ### The code is largely borrow from mmdetection and unprocess, Thx to their wonderful works~ <br/>
 MMdetection: [mmdetection](https://mmdetection.readthedocs.io/en/latest/) ([v2.7.0](https://github.com/open-mmlab/mmdetection/tree/v2.7.0)) <br/>
