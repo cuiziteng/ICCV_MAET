@@ -13,7 +13,6 @@ pytorch 1.6.0
 mmcv 1.1.5
 matplotlib opencv-python Pillow tqdm
 ```
-
 ## Pre-trained Model
 |  dataset   | model  | size | logs |
 |  ----  | ----  | ----  | ----  |
@@ -21,10 +20,20 @@ matplotlib opencv-python Pillow tqdm
 | EXDark  | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1Mrh_sOzXHhDo3Bk3inMiOg), passwd:1234) | 489.10 MB | [google drive](https://drive.google.com/file/d/1jU6lcjfQ5DuxThzGX2A_e-bPdBzJKaAT/view?usp=sharing) |
 
 ## Testing
-
+Testing on (low-light) COCO dataset
+```
+python tools/test.py configs/MAET_yolo/maet_yolo_coco_ort.py [COCO model path] --eval bbox --show-dir [save dir]
+```
+Testing on EXDark dataset
+```
+python tools/test.py configs/MAET_yolo/maet_yolo_exdark.py  [EXDark model path] --eval mAP --show-dir [save dir]
+```
 
 ## Training
+**Setp-1:** Pre-train MAET-COCO model (273 epochs on 4 GPUs):
 
+**Setp-2:** Fine-tune on EXDark datastet (25epoch on 1GPU): 
+python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id]
 
 ## Citation
 ```
