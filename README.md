@@ -2,7 +2,7 @@
 
 **When Human Vision Meets Machine Vision:**
 
-<img src="pics/example.jpg" width="300" height="313">
+<img src="pics/example.jpg" width="300" height="273">
 
 **Physics-based low-light degrading transformation:**
 
