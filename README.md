@@ -16,4 +16,4 @@
 
 ### The code is largely borrow from mmdetection and unprocess, Thx to their wonderful works~ <br/>
 MMdetection: [mmdetection](https://mmdetection.readthedocs.io/en/latest/) ([v2.7.0](https://github.com/open-mmlab/mmdetection/tree/v2.7.0)) <br/>
-Unprocessing: [unprocess](https://github.com/timothybrooks/unprocessing)
+Unprocessing Images for Learned Raw Denoising: [unprocess](https://github.com/timothybrooks/unprocessing)
