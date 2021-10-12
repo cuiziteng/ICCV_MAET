@@ -23,7 +23,9 @@ matplotlib opencv-python Pillow tqdm
 **Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download [EXDark dataset](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)
 
 **Step-2:** Transform label format to VOC format:
+```
 python txt2xml.py --data_dir [your exdark path]
+```
 
 **Step-3:** Change the data place in "configs/MAET_yolo/maet_yolo_coco_ort.py" and "configs/MAET_yolo/maet_yolo_exdark.py" to your own path.
 
