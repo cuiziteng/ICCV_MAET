@@ -2,10 +2,11 @@
 
 **When Human Vision Meets Machine Vision:**<br/>
 
-<img src="pics/example.jpg" width="500" height="313" align="left" />
+<img src="pics/example.jpg" width="300" height="313" align="left" /><br/>
 
 **Physics-based low-light degrading transformation:**<br/>
-![avatar](pics/pipeline.jpg)
+
+<img src="pics/pipeline.jpg" width="500" height="313" align="left" /><br/>
 
 ## Citation
 ```
