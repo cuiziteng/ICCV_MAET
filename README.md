@@ -4,7 +4,7 @@
 
 <img src="pics/example.jpg" width="300" height="273">
 
-**Physics-based low-light degrading transformation:**
+**Physics-based low-light degrading transformation (unprocess -- degradation -- ISP):**
 
 <img src="pics/pipeline.jpg" width="500" height="313"> 
 
