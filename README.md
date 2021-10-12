@@ -19,6 +19,14 @@ matplotlib opencv-python Pillow tqdm
 | COCO  | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1A79a9377A7_zjf-vQYRHdw), passwd:1234) | 470.26 MB | - |
 | EXDark  | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1Mrh_sOzXHhDo3Bk3inMiOg), passwd:1234) | 489.10 MB | [google drive](https://drive.google.com/file/d/1jU6lcjfQ5DuxThzGX2A_e-bPdBzJKaAT/view?usp=sharing) |
 
+## Pre-process
+**Step-1:** Download EXDark dataset from [this page](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)
+
+**Step-2:** Transform label format to VOC format:
+python txt2xml.py --data_dir [your exdark path]
+
+**Step-3:** Change the data place in "configs/MAET_yolo/maet_yolo_coco_ort.py" and "configs/MAET_yolo/maet_yolo_exdark.py" to your own path.
+
 ## Testing
 Testing on (low-light) COCO dataset
 ```
