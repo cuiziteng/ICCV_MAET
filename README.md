@@ -27,7 +27,7 @@ matplotlib opencv-python Pillow tqdm
 python txt2xml.py --data_dir [your exdark path]
 ```
 
-**Step-3:** Change the data place in "configs/MAET_yolo/maet_yolo_coco_ort.py" and "configs/MAET_yolo/maet_yolo_exdark.py" to your own path.
+**Step-3:** Change the data place [line1](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_exdark.py#L56) and [line2](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_coco_ort.py#L63) to your own COCO and EXDark path.
 
 ## Testing
 Testing on (low-light) COCO dataset
