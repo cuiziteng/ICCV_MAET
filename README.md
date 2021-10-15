@@ -47,7 +47,7 @@ Testing MAET on EXDark dataset
 python tools/test.py configs/MAET_yolo/maet_yolo_exdark.py  [EXDark model path] --eval mAP --show-dir [save dir]
 ```
 
-**Comparative Experiment**
+**Comparative Experiment** <br/>
 Testing YOLOV3 on EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE
 ```
 python tools/test.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py)  [MEBBLN/ Kind/ Zero-DCE model] --eval mAP --show-dir [save dir]
@@ -63,7 +63,7 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=[port number] bash ./tools/dist_train_maet.sh 
 python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] --load-from [COCO model path]
 ```
 
-**Comparative Experiment**
+**Comparative Experiment** <br/>
 **Step-Addition:** Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU, finetune on **well-trained normal COCO model**)
 ```
 python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
