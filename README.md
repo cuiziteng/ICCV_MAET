@@ -20,23 +20,35 @@ matplotlib opencv-python Pillow tqdm
 | EXDark  | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1Mrh_sOzXHhDo3Bk3inMiOg), passwd:1234) | 470.26 MB | [google drive](https://drive.google.com/file/d/1jU6lcjfQ5DuxThzGX2A_e-bPdBzJKaAT/view?usp=sharing) |
 
 ## Pre-process
-**Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download [EXDark dataset](https://github.com/cs-chan/Exclusively-Dark-Image-Dataset)
-
-**Step-2:** Transform label format to VOC format:
+**Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download [EXDark dataset] (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC fashion from [google drive]() [baiduyun](). The EXDark dataset should be look like:
 ```
-python txt2xml.py --data_dir [your exdark path]
+EXDark
+│      
+│
+└───JPEGImages
+│   │───IMGS (original low light)
+│   │───IMGS_Kind (imgs enhancement by [Kind, mm 2019](https://arxiv.org/abs/1905.04161))
+│   │───IMGS_ZeroDCE (imgs enhancement by [ZeroDCE, cvpr 2020](https://arxiv.org/abs/2001.06826))
+│   │───IMGS_MEBBLN (imgs enhancement by [MEBBLN, bmvc 2018](http://bmvc2018.org/contents/papers/0700.pdf))
+│───Annotations   
+│───main
+│───label
 ```
 
-**Step-3:** Change the data place [line1](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_exdark.py#L56) and [line2](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_coco_ort.py#L63) to your own COCO and EXDark path.
+**Step-2:** Change the data place [line1](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_exdark.py#L56) and [line2](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_coco_ort.py#L63) to your own COCO and EXDark path.
 
 ## Testing
-Testing on (low-light) COCO dataset
+Testing MAET on (low-light) COCO dataset
 ```
 python tools/test.py configs/MAET_yolo/maet_yolo_coco_ort.py [COCO model path] --eval bbox --show-dir [save dir]
 ```
-Testing on EXDark dataset
+Testing MAET on EXDark dataset
 ```
 python tools/test.py configs/MAET_yolo/maet_yolo_exdark.py  [EXDark model path] --eval mAP --show-dir [save dir]
+```
+Testing YOLOV3 on EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE
+```
+python tools/test.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py)  [MEBBLN/ Kind/ Zero-DCE model] --eval mAP --show-dir [save dir]
 ```
 
 ## Training
@@ -47,6 +59,10 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=[port number] bash ./tools/dist_train_maet.sh 
 **Setp-2:** Fine-tune on EXDark datastet (25epoch on 1 GPU): 
 ```
 python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] --load-from [COCO model path]
+```
+**Constract Experiments** Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU, finetune on **well-trained normal COCO model**)
+```
+python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
 ```
 
 ### Newly MAET-YOLO results on EXDark dataset (0.776 more than our paper's results):
@@ -69,6 +85,7 @@ python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] -
 
 
 ## Citation
+If our work help to your research, please cite our paper~ ^-^, thx.
 ```
 @InProceedings{Cui_2021_ICCV,
     author    = {Cui, Ziteng and Qi, Guo-Jun and Gu, Lin and You, Shaodi and Zhang, Zenghui and Harada, Tatsuya},
