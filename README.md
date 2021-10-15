@@ -72,7 +72,7 @@ python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] -
 python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
 ```
 
-### Newly MAET-YOLO results on EXDark dataset (0.776 more than our paper's results):
+### Newly MAET-YOLO results on EXDark dataset (0.777 more than our paper's results):
 
 | class     | gts  | dets | recall | ap    |
 |  ----  | ----  | ----  | ----  | ----  |
