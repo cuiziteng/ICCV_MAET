@@ -23,7 +23,7 @@ matplotlib opencv-python Pillow tqdm
 | EXDark ([Zero-DCE](https://arxiv.org/abs/2001.06826)) (76.9) | ([google drive]()) ([baiduyun](https://pan.baidu.com/s/1rbl4Y26_sLAqcxj1bbDu2g), passwd:1234) | 470.26 MB | - |
 
 ## Pre-process
-**Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download [EXDark dataset] (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC fashion from [google drive]() ([baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234). The EXDark dataset should be look like:
+**Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download **EXDark dataset** (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC fashion from [google drive]() ([baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234). The EXDark dataset should be look like:
 ```
 EXDark
 │      
