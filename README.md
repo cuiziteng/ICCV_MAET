@@ -16,20 +16,23 @@ matplotlib opencv-python Pillow tqdm
 ## Pre-trained Model
 |  dataset   | model  | size | logs |
 |  ----  | ----  | ----  | ----  |
-| COCO  | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1A79a9377A7_zjf-vQYRHdw), passwd:1234) | 489.10 MB | - |
-| EXDark  | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1Mrh_sOzXHhDo3Bk3inMiOg), passwd:1234) | 470.26 MB | [google drive](https://drive.google.com/file/d/1jU6lcjfQ5DuxThzGX2A_e-bPdBzJKaAT/view?usp=sharing) |
+| MAET-COCO  | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1A79a9377A7_zjf-vQYRHdw), passwd:1234) | 489.10 MB | - |
+| MAET-EXDark (77.7) | ([google drive](https://drive.google.com/file/d/1thYimz_ciMFaZ03ICv61NfFZNnzRbcPN/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1Mrh_sOzXHhDo3Bk3inMiOg), passwd:1234) | 470.26 MB | [google drive](https://drive.google.com/file/d/1jU6lcjfQ5DuxThzGX2A_e-bPdBzJKaAT/view?usp=sharing) |
+| EXDark ([MBLLEN](http://bmvc2018.org/contents/papers/0700.pdf)) (76.3) | ([google drive]()) ([baiduyun](https://pan.baidu.com/s/161AxKd6aK3eGv2bl6UWMgg), passwd:1234) | 470.26 MB | - |
+| EXDark ([Kind](https://arxiv.org/abs/1905.04161)) (76.3)  | ([google drive]()) ([baiduyun](https://pan.baidu.com/s/1nav4RJcf8kF4CJU_CeAxjA), passwd:1234) | 470.26 MB | - |
+| EXDark ([Zero-DCE](https://arxiv.org/abs/2001.06826)) (76.9) | ([google drive]()) ([baiduyun](https://pan.baidu.com/s/1rbl4Y26_sLAqcxj1bbDu2g), passwd:1234) | 470.26 MB | - |
 
 ## Pre-process
-**Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download [EXDark dataset] (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC fashion from [google drive]() [baiduyun](). The EXDark dataset should be look like:
+**Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download [EXDark dataset] (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC fashion from [google drive]() ([baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234). The EXDark dataset should be look like:
 ```
 EXDark
 │      
 │
 └───JPEGImages
 │   │───IMGS (original low light)
-│   │───IMGS_Kind (imgs enhancement by [Kind, mm 2019](https://arxiv.org/abs/1905.04161))
-│   │───IMGS_ZeroDCE (imgs enhancement by [ZeroDCE, cvpr 2020](https://arxiv.org/abs/2001.06826))
-│   │───IMGS_MEBBLN (imgs enhancement by [MEBBLN, bmvc 2018](http://bmvc2018.org/contents/papers/0700.pdf))
+│   │───IMGS_Kind (imgs enhancement by [Kind, mm2019])
+│   │───IMGS_ZeroDCE (imgs enhancement by [ZeroDCE, cvpr 2020])
+│   │───IMGS_MEBBLN (imgs enhancement by [MEBBLN, bmvc 2018])
 │───Annotations   
 │───main
 │───label
@@ -64,7 +67,7 @@ python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] -
 ```
 
 **Comparative Experiment** <br/>
-**Step-Addition:** Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU, finetune on **well-trained normal COCO model**)
+**Step-Addition:** Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU, finetune on well-trained normal COCO model **for fairness**)
 ```
 python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
 ```
