@@ -65,12 +65,10 @@ class ExdarkDataset(CustomDataset):
         data_infos = []
         img_ids = mmcv.list_from_file(ann_file)
         for img_id in img_ids:
-            #print(img_id)
-            filename = f'JPEGImages/IMGS/{img_id}'
-            # filename = f'JPEGImages/IMGSKind/{img_id}'
-            # filename = f'JPEGImages/IMGS_MEBBLN/{img_id}'
-            # filename = f'JPEGImages/IMGS_ZeroDCE/{img_id}'
-            xml_path = osp.join(self.img_prefix, 'Annotations/LABLE',
+            #print('0000', self.img_prefix)
+            #print('1111', img_id)
+            filename = img_id
+            xml_path = osp.join('data/Exdark/Annotations/LABLE',
                                 f'{img_id}.xml')
             #print(xml_path)
             tree = ET.parse(xml_path)
@@ -82,15 +80,7 @@ class ExdarkDataset(CustomDataset):
                 width = int(size.find('width').text)
                 height = int(size.find('height').text)
             else:
-                img_path = osp.join(self.img_prefix, 'JPEGImages/IMGS',
-                                   '{}'.format(img_id))
-                # img_path = osp.join(self.img_prefix, 'JPEGImages/IMGSKind',
-                #                    '{}'.format(img_id))
-                
-                # img_path = osp.join(self.img_prefix, 'JPEGImages/IMGS_MEBBLN',
-                #                    '{}'.format(img_id))
-                #img_path = osp.join(self.img_prefix, 'JPEGImages/IMGS_ZeroDCE',
-                #                   '{}'.format(img_id))
+                img_path = osp.join(self.img_prefix, '{}'.format(img_id))
                 img = Image.open(img_path)
                 width, height = img.size
             data_infos.append(
@@ -106,8 +96,8 @@ class ExdarkDataset(CustomDataset):
                 continue
             if self.filter_empty_gt:    #True
                 img_id = img_info['id']
-                xml_path = osp.join(self.img_prefix, 'Annotations/LABLE',
-                                f'{img_id}.xml')
+                xml_path = osp.join('data/Exdark/Annotations/LABLE',
+                                    f'{img_id}.xml')
                 tree = ET.parse(xml_path)
                 root = tree.getroot()
                 for obj in root.findall('object'):
@@ -131,7 +121,8 @@ class ExdarkDataset(CustomDataset):
         """
 
         img_id = self.data_infos[idx]['id']
-        xml_path = osp.join(self.img_prefix, 'Annotations/LABLE', f'{img_id}.xml')
+        xml_path = osp.join('data/Exdark/Annotations/LABLE',
+                            f'{img_id}.xml')
         tree = ET.parse(xml_path)
         root = tree.getroot()
         bboxes = []
@@ -198,7 +189,8 @@ class ExdarkDataset(CustomDataset):
 
         cat_ids = []
         img_id = self.data_infos[idx]['id']
-        xml_path = osp.join(self.img_prefix, 'Annotations/LABLE', f'{img_id}.xml')
+        xml_path = osp.join('data/Exdark/Annotations/LABLE',
+                            f'{img_id}.xml')
         tree = ET.parse(xml_path)
         root = tree.getroot()
         for obj in root.findall('object'):
