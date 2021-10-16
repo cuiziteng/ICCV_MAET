@@ -41,11 +41,11 @@ EXDark
 **Step-2:** Change the data place [line1](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_exdark.py#L56) and [line2](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_coco_ort.py#L63) to your own COCO and EXDark path.
 
 ## Testing
-Testing MAET on (low-light) COCO dataset
+Testing MAET-YOLOV3 on (low-light) COCO dataset
 ```
 python tools/test.py configs/MAET_yolo/maet_yolo_coco_ort.py [COCO model path] --eval bbox --show-dir [save dir]
 ```
-Testing MAET on EXDark dataset
+Testing MAET-YOLOV3 on EXDark dataset
 ```
 python tools/test.py configs/MAET_yolo/maet_yolo_exdark.py  [EXDark model path] --eval mAP --show-dir [save dir]
 ```
