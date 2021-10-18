@@ -45,7 +45,7 @@ model = dict(
                        red_range=(1.9, 2.4),
                        blue_range=(1.5, 1.9),
                        quantisation=[12, 14, 16]),
-    ort_cfg=dict(use_ort=False))
+    ort_cfg=dict(use_ort=True)
 # training and testing settings
 train_cfg = dict(
     assigner=dict(
