@@ -98,17 +98,17 @@ data = dict(
     train=dict(
         type=dataset_type,
         ann_file=data_root + 'main/train.txt',
-        img_prefix=data_root,
+        img_prefix=data_root + 'JPEGImages/IMGS',
         pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
         ann_file = data_root + 'main/val.txt',
-        img_prefix=data_root,
+        img_prefix=data_root + 'JPEGImages/IMGS',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
         ann_file = data_root + 'main/val.txt',
-        img_prefix=data_root,
+        img_prefix=data_root + 'JPEGImages/IMGS',
         pipeline=test_pipeline))
 
 # optimizer
