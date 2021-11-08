@@ -122,5 +122,5 @@ lr_config = dict(
     warmup_ratio=0.1,
     step=[18, 23])
 # runtime settings
-total_epochs = 25
+total_epochs = 24
 evaluation = dict(interval=1, metric=['mAP'])
