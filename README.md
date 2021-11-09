@@ -16,7 +16,7 @@ matplotlib opencv-python Pillow tqdm
 ## Pre-trained Model
 |  dataset   | model  | size | logs |
 |  ----  | ----  | ----  | ----  |
-| MAET-COCO  | ([google drive](https://drive.google.com/file/d/1C7qntr0bW7piaNZPqPzpNZ0fIs8th-Qh/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1Mrh_sOzXHhDo3Bk3inMiOg), passwd:1234) | 489.10 MB | - |
+| **MAET-COCO (ours)**  | ([google drive](https://drive.google.com/file/d/1C7qntr0bW7piaNZPqPzpNZ0fIs8th-Qh/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1Mrh_sOzXHhDo3Bk3inMiOg), passwd:1234) | 489.10 MB | - |
 | **MAET-EXDark (ours)** (77.7) | ([google drive](https://drive.google.com/file/d/1XCP4IgW579WlGljegDCjYpQA0V3vq7-E/view?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1rE0H1YPldj0ASBWmuksaIA), passwd:1234) | 470.26 MB | [google drive](https://drive.google.com/file/d/1jU6lcjfQ5DuxThzGX2A_e-bPdBzJKaAT/view?usp=sharing) |
 | EXDark (76.8) | ([google drive]) ([baiduyun](https://pan.baidu.com/s/1WRqXA8-Tal7WFtIt-2v0jA), passwd:1234) | 470.26 MB | - |
 | EXDark ([MBLLEN](http://bmvc2018.org/contents/papers/0700.pdf)) (76.3) | ([google drive](https://drive.google.com/drive/folders/1umRUBXEzHOSx1W1NDWpqrhuHXAQISviM?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/161AxKd6aK3eGv2bl6UWMgg), passwd:1234) | 470.26 MB | - |
