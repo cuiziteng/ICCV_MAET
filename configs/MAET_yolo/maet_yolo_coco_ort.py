@@ -1,7 +1,7 @@
 _base_ = '../_base_/default_runtime.py'
 # model settings
 model = dict(
-    type='MAET_RetinaNet',
+    type='MAET_YOLO',
     pretrained='open-mmlab://darknet53',
     backbone=dict(type='Darknet', depth=53, out_indices=(3, 4, 5)),
     neck=dict(
