@@ -68,7 +68,7 @@ pip install -r requirements/build.txt
 pip install -v -e .  # or "python setup.py develop"
 ```
 
-**Step-3:** Change the data place [line1](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_exdark.py#L56) and [line2](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_coco_ort.py#L63) to your own COCO and EXDark path.
+**Step-3:** Change the data place [line1](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_exdark.py#L56) and [line2](https://github.com/cuiziteng/MAET/blob/e7a23bce5cbfc089aafff205afa402f75823706e/configs/MAET_yolo/maet_yolo_coco_ort.py#L63) to your own COCO and EXDark path, and [line3](https://github.com/cuiziteng/ICCV_MAET/blob/4e0a530473b88f8958737e7beec566696ac56309/configs/MAET_yolo/maet_yolo_ug2.py#L56) to your own UG2-DarkFace path.
 
 ## Testing
 Testing MAET-YOLOV3 on (low-light) COCO dataset
