@@ -48,7 +48,6 @@ For **UG2-DarkFace Dataset**: Download **UG2** in VOC fashion from [google drive
 ```
 UG2
 │      
-│
 └───main
 │───xml  
 │───label
