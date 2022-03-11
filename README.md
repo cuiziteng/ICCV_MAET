@@ -85,7 +85,7 @@ python tools/train.py configs/MAET_yolo/maet_yolo_ug2.py --gpu-ids [gpu id] --lo
 ```
 
 **Comparative Experiment** <br/>
-Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU, finetune on well-trained normal COCO model (608x608) **for fairness**)
+Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU) on well-trained normal COCO model (608x608) **for fairness**
 ```
 python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
 ```
