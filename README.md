@@ -56,6 +56,9 @@ UG2
 
 **Step-2:** Cd in "your_project_path", and do set-up process (see [mmdetection](https://mmdetection.readthedocs.io/en/latest/get_started.html#installation) if you want find details): 
 ```
+git clone git@github.com:cuiziteng/ICCV_MAET.git
+```
+```
 cd "your project page"
 ```
 ```
