@@ -54,7 +54,7 @@ UG2
 │───imgs
 ```
 
-**Step-2:** Cd in "your_project_path", and do set-up process (see [mmdetection](https://mmdetection.readthedocs.io/en/latest/get_started.html#installation)): 
+**Step-2:** Cd in "your_project_path", and do set-up process (see [mmdetection](https://mmdetection.readthedocs.io/en/latest/get_started.html#installation) if you want find details): 
 ```
 pip install -r requirements/build.txt
 ```
