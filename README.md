@@ -25,7 +25,11 @@ matplotlib opencv-python Pillow tqdm
 | **MAET-UG2-DarkFace (ours)** (56.2) | ([google drive]()) ([baiduyun](https://pan.baidu.com/s/1vlvmVt_JFaWrUj2_YBNUTg), passwd:1234) | 469.81 MB | - |
 
 ## Pre-process
-**Step-1:** Download [COCO 2017 dataset](https://cocodataset.org/#download) and download **EXDark dataset** (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC fashion from [google drive](https://drive.google.com/file/d/1X_zB_OSp_thhk9o26y1ZZ-F85UeS0OAC/view?usp=sharing) ([baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234). The EXDark dataset should be look like:
+**Step-1:** 
+
+For **MS COCO Dataset**: Download [COCO 2017 dataset](https://cocodataset.org/#download).
+
+For **EXDark Dataset**: Download **EXDark** (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC fashion from [google drive](https://drive.google.com/file/d/1X_zB_OSp_thhk9o26y1ZZ-F85UeS0OAC/view?usp=sharing) ([baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234). The EXDark dataset should be look like:
 ```
 EXDark
 │      
@@ -38,6 +42,17 @@ EXDark
 │───Annotations   
 │───main
 │───label
+```
+
+For **UG2-DarkFace Dataset**: Download **UG2** in VOC fashion from [google drive]() ([baiduyun](), passwd:1234). The UG2-DarkFace dataset should be look like:
+```
+UG2
+│      
+│
+└───main
+│───xml  
+│───label
+│───imgs
 ```
 
 **Step-2:** Cd in "your_project_path", and do set-up process (see [mmdetection](https://mmdetection.readthedocs.io/en/latest/get_started.html#installation)): 
