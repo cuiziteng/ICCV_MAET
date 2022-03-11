@@ -44,7 +44,7 @@ EXDark
 │───label
 ```
 
-For **UG2-DarkFace Dataset**: Download **UG2** in VOC fashion from [google drive]() or [baiduyun](), passwd:1234. The UG2-DarkFace dataset should be look like:
+For **UG2-DarkFace Dataset**: Download **UG2** in VOC fashion from [google drive]() or [baiduyun](https://pan.baidu.com/s/1UfQq5ypVI9EYrBEin5225A), passwd:1234. The UG2-DarkFace dataset should be look like:
 ```
 UG2
 │      
