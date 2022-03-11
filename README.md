@@ -75,11 +75,11 @@ python tools/test.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_d
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=[port number] bash ./tools/dist_train_maet.sh configs/MAET_yolo/maet_yolo_coco_ort.py 4
 ```
-**Setp-2(EXDark):** Fine-tune on EXDark datastet (25epoch on 1 GPU): 
+**Setp-2 (EXDark):** Fine-tune on EXDark datastet (25epoch on 1 GPU): 
 ```
 python tools/train.py configs/MAET_yolo/maet_yolo_exdark.py --gpu-ids [gpu id] --load-from [COCO model path]
 ```
-**Setp-2(UG2-DarkFace):** Fine-tune on UG2-DarkFace datastet (20epoch on 1 GPU): 
+**Setp-2 (UG2-DarkFace):** Fine-tune on UG2-DarkFace datastet (20epoch on 1 GPU): 
 ```
 python tools/train.py configs/MAET_yolo/maet_yolo_ug2.py --gpu-ids [gpu id] --load-from [COCO model path]
 ```
