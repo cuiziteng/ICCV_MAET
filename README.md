@@ -59,7 +59,7 @@ UG2
 git clone git@github.com:cuiziteng/ICCV_MAET.git
 ```
 ```
-cd "your project page"
+cd "your project path"
 ```
 ```
 pip install -r requirements/build.txt
