@@ -214,7 +214,7 @@ class MAET_YOLO(BaseDetector):
         var = img5 * shot_noise + read_noise  # here the read noise is independent
         var = torch.max(var, epsilon)
         # print('the var is:', var)
-        noise = torch.normal(mean=0, std=var)
+        noise = torch.normal(mean=0, std=torch.sqrt(var))
         img6 = img5 + noise
 
         '''
