@@ -136,7 +136,7 @@ python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_
 
 
 ## Citation
-If our work help to your research, please cite our paper~ ^-^, thx.
+If our work help to your research, please cite our paper, thx.
 ```
 @InProceedings{Cui_2021_ICCV,
     author    = {Cui, Ziteng and Qi, Guo-Jun and Gu, Lin and You, Shaodi and Zhang, Zenghui and Harada, Tatsuya},
