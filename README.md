@@ -2,14 +2,14 @@
 
 ## Abstract
 
-Dark environment becomes a challenge for computer vision algorithms owing to insufficient photons and un- desirable noise. To enhance object detection in a dark environment, we propose a novel multitask auto encod- ing transformation (MAET) model which is able to ex- plore the intrinsic pattern behind illumination translation. In a self-supervision manner, the MAET learns the in- trinsic visual structure by encoding and decoding the re- alistic illumination-degrading transformation considering the physical noise model and image signal processing (ISP). Based on this representation, we achieve the ob- ject detection task by decoding the bounding box coor- dinates and classes. To avoid the over-entanglement of two tasks, our MAET disentangles the object and degrad- ing features by imposing an orthogonal tangent regular- ity. This forms a parametric manifold along which multi- task predictions can be geometrically formulated by max- imizing the orthogonality between the tangents along the outputs of respective tasks. Our framework can be im- plemented based on the mainstream object detection ar- chitecture and directly trained end-to-end using normal target detection datasets, such as VOC and COCO. We have achieved the state-of-the-art performance using syn- thetic and real-world datasets.
+Dark environment becomes a challenge for computer vision algorithms owing to insufficient photons and undesirable noise. To enhance object detection in a dark environment, we propose a novel multitask auto encod- ing transformation (MAET) model which is able to explore the intrinsic pattern behind illumination translation. In a self-supervision manner, the MAET learns the intrinsic visual structure by encoding and decoding the realistic illumination-degrading transformation considering the physical noise model and image signal processing (ISP). Based on this representation, we achieve the object detection task by decoding the bounding box coor- dinates and classes. To avoid the over-entanglement of two tasks, our MAET disentangles the object and degrad- ing features by imposing an orthogonal tangent regularity. This forms a parametric manifold along which multi-task predictions can be geometrically formulated by maximizing the orthogonality between the tangents along the outputs of respective tasks. Our framework can be implemented based on the mainstream object detection ar- chitecture and directly trained end-to-end using normal target detection datasets, such as VOC and COCO. We have achieved the state-of-the-art performance using synthetic and real-world datasets.
 
 
 **When Human Vision Meets Machine Vision (compare with enhancement methods):** <br/>
-<img src="pics/example.jpg" height="250"> 
+<img src="pics/example.jpg" height="350"> 
 
 **Physics-based low-light degrading transformation (unprocess -- degradation -- ISP):**
-<img src="pics/pipeline.jpg" height="250">
+<img src="pics/pipeline.jpg" height="350">
 
 ## Enviroment
 ```
