@@ -116,15 +116,17 @@ Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU
 python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
 ```
 
-### Our baselines on EXDark dataset and the newly MAET-YOLO results on EXDark dataset (0.777 more than our paper's results), the detector is YOLO-V3:
+### Our baselines on EXDark dataset (renew our paper's results) and the newly MAET-YOLO results on EXDark dataset (0.777 more than our paper's results), the detector is YOLO-V3:
 
-| class | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
-|  ---- | ----    | ---- | ----   | ----| ----| ----| ----  | ----| ----| ----      | ----   |  ---- |
-| KIND | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
-| MBLLEN | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
-| Zero-DCE | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
-| MAET(ours) | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
-| [IAT-YOLOV3](https://github.com/cuiziteng/Illumination-Adaptive-Transformer) | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
+| class | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table | Total |
+|  ---- | ----    | ---- | ----   | ----| ----| ----| ----  | ----| ----| ----      | ----   |  ---- |  ---- |
+| Baseline |79.8 | 75.3 | 78.1 | 92.3 | 83.0 | 68.0 | 69.0 | 79.0 | 78.0 | 77.3 | 81.5 | 55.5 | 76.4 |
+| KIND | 80.1 | 77.7 | 77.2 | 93.8 | 83.9 | 66.9 | 68.7 | 77.4 | 79.3 | 75.3 | 80.9 | 53.8 | 76.3 |
+| MBLLEN | 82.0 | 77.3 | 76.5 | 91.3 | 84.0 | 67.6 | 69.1 | 77.6 | 80.4 | 75.6 | 81.9 | 58.6 | 76.8 |
+| Zero-DCE | 84.1 | 77.6 | 78.3 | 93.1 | 83.7 | 70.3 | 69.8 | 77.6 | 77.4 | 76.3 | 81.0 | 53.6 | 76.9 |
+| MAET (ours) | 83.1| 78.5| 75.6| 92.9| 83.1| 73.4| 71.3| 79.0| 79.8| 77.2| 81.1| 57.0| 77.7|
+| [IAT-YOLOV3](https://github.com/cuiziteng/Illumination-Adaptive-Transformer) | 79.8 | 76.9 | 78.6 | 92.5 | 83.8 | 73.6 | 72.4 | 78.6 | 79.0 | 79.0 | 81.1 | 57.7 | 77.8 |
+
 
 
 ## Citation
