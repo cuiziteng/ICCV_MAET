@@ -116,23 +116,15 @@ Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU
 python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
 ```
 
-### Newly MAET-YOLO results on EXDark dataset (0.777 more than our paper's results):
+### Our baselines on EXDark dataset and the newly MAET-YOLO results on EXDark dataset (0.777 more than our paper's results), the detector is YOLO-V3:
 
-| class     | gts  | dets | recall | ap    |
-|  ----  | ----  | ----  | ----  | ----  |
-| Bicycle   | 212  | 773  | 0.920  | 0.831 |
-| Boat      | 289  | 942  | 0.900  | 0.785 |
-| Bottle    | 282  | 1217 | 0.879  | 0.756 |
-| Bus       | 135  | 331  | 0.970  | 0.929 |
-| Car       | 597  | 1788 | 0.915  | 0.831 |
-| Cat       | 183  | 579  | 0.885  | 0.734 |
-| Chair     | 466  | 2132 | 0.854  | 0.713 |
-| Cup       | 366  | 1086 | 0.880  | 0.790 |
-| Dog       | 207  | 631  | 0.918  | 0.798 |
-| Motorbike | 233  | 946  | 0.884  | 0.772 |
-| People    | 1562 | 4353 | 0.906  | 0.811 |
-| Table     | 333  | 1880 | 0.805  | 0.570 |
-| mAP       |      |      |        | **0.777** |
+| class | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
+|  ---- | ----    | ---- | ----   | ----| ----| ----| ----  | ----| ----| ----      | ----   |  ---- |
+| KIND | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
+| MBLLEN | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
+| Zero-DCE | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
+| MAET(ours) | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
+| [IAT-YOLOV3](https://github.com/cuiziteng/Illumination-Adaptive-Transformer) | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table |
 
 
 ## Citation
