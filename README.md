@@ -116,7 +116,7 @@ Fine-tune EXDark dataset enhancement by MEBBLN/ Kind/ Zero-DCE (25epoch on 1 GPU
 python tools/train.py configs/MAET_yolo/yolo_mbllen.py (yolo_kind.py, yolo_zero_dce.py) --gpu-ids [gpu id]
 ```
 
-### Our baselines on EXDark dataset (renew our paper's results) and the newly MAET-YOLO results on EXDark dataset (0.777 more than our paper's results), the detector is YOLO-V3:
+### Baselines on EXDark dataset (renew), the baseline detector is YOLO-V3:
 
 | class | Bicycle | Boat | Bottle | Bus | Car | Cat | Chair | Cup | Dog | Motorbike | People | Table | Total |
 |  ---- | ----    | ---- | ----   | ----| ----| ----| ----  | ----| ----| ----      | ----   |  ---- |  ---- |
