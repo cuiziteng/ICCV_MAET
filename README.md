@@ -32,9 +32,9 @@ matplotlib opencv-python Pillow tqdm
 ## Pre-process
 **Step-1:** 
 
-For **MS COCO Dataset**: Download [COCO 2017 dataset](https://cocodataset.org/#download).
+For **MS COCO Dataset (Use for Pre-train)**: Download [COCO 2017 dataset](https://cocodataset.org/#download).
 
-For **EXDark Dataset**: Download **EXDark** (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC format from [google drive](https://drive.google.com/file/d/1X_zB_OSp_thhk9o26y1ZZ-F85UeS0OAC/view?usp=sharing) or [baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234. The EXDark dataset should be look like:
+For **EXDark Dataset (Use for Fine-tune and Evaluation)**: Download **EXDark** (include EXDark enhancement by MBLLEN, Zero-DCE, KIND) in VOC format from [google drive](https://drive.google.com/file/d/1X_zB_OSp_thhk9o26y1ZZ-F85UeS0OAC/view?usp=sharing) or [baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234. The EXDark dataset should be look like:
 ```
 EXDark
 │      
@@ -49,7 +49,7 @@ EXDark
 │───label
 ```
 
-For **UG2-DarkFace Dataset**: Download **UG2** in VOC format from [google drive]() or [baiduyun](https://pan.baidu.com/s/1UfQq5ypVI9EYrBEin5225A), passwd:1234. The UG2-DarkFace dataset should be look like:
+For **UG2-DarkFace Dataset (Use for Fine-tune and Evaluation)**: Download **UG2** in VOC format from [google drive]() or [baiduyun](https://pan.baidu.com/s/1UfQq5ypVI9EYrBEin5225A), passwd:1234. The UG2-DarkFace dataset should be look like:
 ```
 UG2
 │      
