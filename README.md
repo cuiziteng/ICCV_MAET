@@ -15,7 +15,7 @@ Dark environment becomes a challenge for computer vision algorithms owing to ins
 ```
 python 3.7
 pytorch 1.6.0
-mmcv 1.1.5
+mmcv 1.1.5 (for example: pip install mmcv-full==1.1.5 -f https://download.openmmlab.com/mmcv/dist/cu110/torch1.7.0/index.html, detail see: https://github.com/open-mmlab/mmcv)
 matplotlib opencv-python Pillow tqdm
 ```
 ## Pre-trained Model
