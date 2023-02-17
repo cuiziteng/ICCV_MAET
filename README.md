@@ -27,7 +27,7 @@ matplotlib opencv-python Pillow tqdm scipy
 | EXDark ([MBLLEN](http://bmvc2018.org/contents/papers/0700.pdf)) (76.3) 20 class| ([google drive](https://drive.google.com/drive/folders/1umRUBXEzHOSx1W1NDWpqrhuHXAQISviM?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/161AxKd6aK3eGv2bl6UWMgg), passwd:1234) | 470.26 MB | - |
 | EXDark ([Kind](https://arxiv.org/abs/1905.04161)) (76.3) 20 class| ([google drive](https://drive.google.com/drive/folders/1umRUBXEzHOSx1W1NDWpqrhuHXAQISviM?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1nav4RJcf8kF4CJU_CeAxjA), passwd:1234) | 470.26 MB | - |
 | EXDark ([Zero-DCE](https://arxiv.org/abs/2001.06826)) (76.9) 20 class| ([google drive](https://drive.google.com/drive/folders/1umRUBXEzHOSx1W1NDWpqrhuHXAQISviM?usp=sharing)) ([baiduyun](https://pan.baidu.com/s/1rbl4Y26_sLAqcxj1bbDu2g), passwd:1234) | 470.26 MB | - |
-| **MAET-UG2-DarkFace (ours)** (56.2) 1 class| ([google drive]()) ([baiduyun](https://pan.baidu.com/s/1vlvmVt_JFaWrUj2_YBNUTg), passwd:1234) | 469.81 MB | - |
+| **MAET-UG2-DarkFace (ours)** (56.2) 1 class| ([google drive](https://drive.google.com/file/d/19Vp7jdVNpvbPIcgPU_K0PxekYLtZWXjF/view?usp=share_link)) ([baiduyun](https://pan.baidu.com/s/1vlvmVt_JFaWrUj2_YBNUTg), passwd:1234) | 469.81 MB | - |
 
 ## Pre-process
 **Step-1:** 
